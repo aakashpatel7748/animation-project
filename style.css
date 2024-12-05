@@ -6,7 +6,14 @@
 html, body {
     width: 100%;
     height: 100%;
-    
+   background-color: #F4F4F1;
+    overflow-x: hidden;
+}
+.main{
+    width: 100%;
+    height: auto;
+    background-color: #E4E4E4;
+   
 }
 
 nav{
@@ -21,17 +28,35 @@ nav{
     gap: 10px;
    
 }
-.content2  >h2{
+.content2  >p{
     border: 1px solid black;
-    font-weight: 400;
+    font-weight: 200;
     padding: 5px 12px;
     border-radius: 5px;
 }
-nav > h2{
-    width: 20;
+.content2 > p > span{
+  text-decoration: underline;
+  font-weight: 600;
+}
+nav > img {
+    width: 5%;
     font-weight: 900;
-    color: black;
-  
+    animation-name: logoround;
+   animation-duration: 3s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;  
+}
+.content2 > h2:hover{
+  background-color: black;
+  color: whitesmoke;
+}
+@keyframes logoround {
+  form{
+     rotate: 0;
+  }
+  to{
+    rotate: 360deg;
+  }
 }
 nav > h2 > img{
     width: 100%;
@@ -54,6 +79,13 @@ nav > h2 > img{
     font-weight: 540;
     line-height: 0.9;
 }
+.hading-left > h1 > img{
+  width: 11%;
+  animation-name: logoround;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; 
+}
  
 .hading-right {
    width: 30%;
@@ -72,21 +104,33 @@ nav > h2 > img{
      font-size: 15px;
      border-radius: 5px;
      border: none;
-     background-color: rgb(234, 229, 229);
+     background-color: white;
      color: black;
      font-weight: 600;
      }
 
-     /*============page2===================  */
+     .hading-right > button:hover{
+      border-radius:15px ;
+      text-decoration: underline ;
+      transition: 1s;
+     }    
 
-  .page-2{
-    /* width: 100%; */
+     /*============page2===================  */
+     .page-2{
+        width: 100%;
+     }
+
+  .page-2-content{
+    width: 100%;
+    /* max-width: 100%; */
+   
     gap: 15px;
     display: flex;
     margin-top: 7%;
+
   }
   
-  .page-2 > img{
+  .page-2-content > img{
     width: 40%;
     border-radius: 110px;
     animation-name: move;
@@ -94,6 +138,7 @@ nav > h2 > img{
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    
   }
 
   @keyframes move {
@@ -106,3 +151,603 @@ nav > h2 > img{
 
     }
   }
+/* =========================page2============= */
+
+  .page-2-text{
+    width: 90%;
+    /* padding: 5% 14%; */
+    margin: 5% ;
+    
+  }
+  .page-2-text > p{
+    font-size: 26px;
+  }
+
+  .page-2-text > button{
+    padding: 14px 25px ;
+    margin-top: 20px;
+    font-size: 13px;
+    border: none;
+    border-radius: 9px;
+    font-weight: 600;
+  }
+
+  /* ================page3============ */
+
+  .page3{
+    width: 100%;
+    
+
+  }
+
+  .page3 > p{
+   text-align: center;
+   font-size: 19px;
+   padding: 4% 0;
+
+  }
+  .page3-top {
+    width: 100%;
+    margin: 5% 3%;
+  }
+  .page3-top > h1{
+    font-size: 150px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 0.8;
+  }
+
+  .page3-top > .Gotta {
+    padding: 18px 25px;
+    background-color: #DFB625;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60%;
+    rotate: -10deg;
+    font-size: 15px;
+    font-weight: 550;
+    margin-top: -2%;
+  }
+
+  .page3-top > button{
+    padding: 18px 20px;
+    border:0.5px solid black;
+    border-radius: 10px;
+    margin-left:80%;
+    font-size: 16px;
+    margin-top: 2%;
+  }
+
+  .page3-bottom{
+    width: 100%;
+
+  }
+  .page3-bottom > img{
+    width: 90%;
+    animation-name: border;
+    animation-duration: 2s;
+    /* animation-timing-function: linear; */
+    animation-iteration-count: infinite ;
+    /* cursor: pointer; */
+
+    margin: 0 5%;
+    border-radius: 20px;
+  }
+
+  @keyframes border {
+    form{
+       border-radius: 0;
+       cursor:default ;
+    }
+    to{
+      border-radius: 200px;
+      cursor: zoom-in;
+    }
+  }
+
+
+.page3-bottom>p{
+   margin-top: 2%;
+   margin-left: 5%; 
+   font-weight: 10;
+    
+}
+.page3-bottom >h2{
+    margin-left: 5%;
+}
+
+.page3-bottom > .page3-button{
+    padding: 3px 10px;
+    margin-left: 5% ;
+    margin-top: 2%;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-bottom: 5%;
+    
+}
+
+.page3-bottom > button{
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+
+.page3-images{
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+}
+
+.photo7{
+    width: 50%;
+}
+.photo7 > img{
+    width: 100%;
+    height: 500px;
+    /* margin: 5%; */
+    border-radius: 30px;
+}
+.photo7 > p{
+    /* padding-left: 2%; */
+    padding-top: 2%;
+}
+.photo7 > button{
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 3%;
+}
+
+.photo8{
+    width:50%;
+}
+.photo8 > img{
+    width: 100%;
+    height: 500px;
+    /* margin: 5%; */
+    margin-left: 30px;
+    border-radius: 30px;
+   
+}
+
+.photo8 >p{
+    padding-top: 2%;
+    margin-left: 30px;
+}
+.photo8 >h2{
+    margin-left: 30px;
+}
+.photo8 > button{
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 3%;
+    margin-left: 30px;
+}
+
+/* ====================page3-box========== */
+
+.page3-box{
+    width: 570px;
+    height: 80px;
+    margin: 5% 5%;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.page3-box > h3{
+    font-size: 18px;
+    padding: 0 3%;
+}
+.page3-box > button{
+    padding: 17px 15px;
+    margin: 0 3%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.page3-box2{
+    height: 20px;
+}
+
+
+/* =================page4=================== */
+.page4{
+    width: 100%;
+    height: auto;
+    margin:3% 5% ;
+    background-color: #F4F4F1;
+}
+
+.page4-content{
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.page4-content > h2{
+    padding: 2% 0;
+}
+
+.page4-btn{
+    margin-right: 10%;
+    padding: 12px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+.page4-imges {
+    width: 100%;
+    display: flex;
+    height: auto;
+   gap: 10px;
+   
+}
+.photo9{
+    width: 22%;
+    height: 22px;
+}
+.photo9 > img{
+    width: 100%;
+     border-top-left-radius:20px ;
+     border-top-right-radius:20px ;
+}
+.photo10{
+    width: 22%;
+}
+.photo10 > img{
+    width: 100%;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+}
+.photo11{
+    width: 22%;
+}
+.photo11 > img{
+    width: 100%;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+}
+.photo12{
+    width: 22%;
+}
+.photo12 > img{
+    width: 100%;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+}
+
+.photo{
+    width: 100%;
+    height: 170px;
+   color: white;
+    margin-bottom: 5%;
+    margin-top: -2%;
+    border-end-start-radius:20px ;
+  border-end-end-radius: 20px;
+}
+.photo > h2{
+    padding:  10px 20px;;
+}
+.photo >h2 > i{
+padding-left: 55px;
+}
+
+.photo > p{
+    padding-top: 50px;
+    padding-left: 22px;
+    padding-right: 10px;
+}
+.con1 {
+     background-color: #AA81B7;
+}
+.con1 > h2{
+    padding: 10px 20px;
+}
+
+.con2 {
+     background-color: #000000;
+}
+.con3 {
+     background-color: #36A96A;
+}
+.con4 {
+     background-color: #FA8A58;
+}
+
+/* .page4-text{
+    margin: 3% 2%;
+} */
+.page4-text{
+    width: 80%;
+    /* padding: 5% 14%; */
+    margin-left: 1% ;
+    margin-right: 1% ;
+    margin-top: 3%;
+  }
+  .page4-text  > div> p{
+    font-size: 26px;
+  }
+
+  .page4-text > button{
+    padding: 14px 25px ;
+    margin-top: 20px;
+    font-size: 13px;
+    border: none;
+    border-radius: 9px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+  }
+
+  /* ====================page5========== */
+
+
+  .page5{
+    width: 100%;
+    height: auto;
+   background-color: #F4F4F1;
+   
+  }
+  .page5 > p{
+   text-align: center;
+ margin-top: 5%;
+ margin-bottom: 5%;
+  }
+
+  .page5-hading{
+    width: 100%;
+    text-align: center;
+  }
+
+  .page5-hading > h1{
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 0.8;
+    margin-right: 3%;
+  }
+  .smiley{
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(43, 243, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  -7% 76%;
+    animation-name: round;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+  }
+  .smiley2{
+    width: 50px; 
+    height: 50px;
+    border-bottom:9px solid black ;
+    /* background-color: red; */
+    border-radius: 50%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .smiley2 >p{
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: black;
+  gap: 9px;
+  }
+
+  @keyframes round {
+    form{
+        rotate: 0;
+    }
+    to{
+        rotate: 360deg;
+    }
+    
+  }
+
+
+  .page5-image{
+    width: 92%;
+  }
+  .page5-image > img{
+    width: 100%;
+    margin-top: 14%;
+    margin-bottom: 1%;
+    border-radius: 110px;
+  }
+.page5-btn{
+  display: flex;
+}
+  .page5-btn > button{
+   padding: 8px 15px;
+   border-radius: 30px;
+   border: 1px solid black;
+   font-weight: lighter;
+  }
+
+  .page5-btn > p{
+    padding: 1% ;
+    font-weight: lighter;
+    
+  }
+
+  /* ======================footer=========== */
+  .footer1{
+    margin-top: 10%;
+  }
+  .border{
+    width: 100%;
+    border: 1px solid rgb(191, 185, 185);
+    margin: 1% 0;
+  }
+
+  .table{
+    display: flex;
+    gap: 170px;
+     margin-bottom: 150px; ;
+  }
+.table1 > h2{
+  font-weight: 100;
+}
+
+.table2 > h2{
+  font-weight: 100;
+}
+
+.table3 > h2{
+  font-weight: 100;
+}
+
+.let-go{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.footer2{
+  width: 100%;
+  height: 60%;
+  background-color: black;
+  color: white;
+}
+
+.footer2{
+  display: flex;
+}
+
+.left-footer {
+  width: 50%;
+}
+.left-footer > h2 {
+  padding-top:8%;
+  padding-left: 8%;
+  font-size: 30px;
+}
+.left-footer > button{
+  padding: 10px 22px;
+  margin: 10px  55px;
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 5px;
+}
+
+
+
+.right-footer{
+  display: flex;
+  gap: 140px;
+  padding: 50px 22px;
+}
+
+.right-footer > ul > h2{
+   font-size: 17px;
+   font-weight: 200;
+   padding-bottom: 25px;
+} 
+.right-footer > ul > li{
+   padding-bottom: 15px;
+   font-size: 15px;
+} 
+
+
+@media (max-width: 1200px) {
+  .hading-left > h1 {
+      font-size: 80px; /* Decrease heading size */
+  }
+  .hading-right {
+      width: 40%; /* Adjust width for smaller screens */
+      padding-left: 10%;
+  }
+  .page3-top > h1 {
+      font-size: 100px; /* Decrease heading size */
+  }
+  .page3-top > button {
+      margin-left: 70%; /* Adjust button position */
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+      flex-direction: column; /* Stack nav items */
+      padding: 10px; /* Reduce padding */
+  }
+  .content2 {
+      flex-direction: column; /* Stack content items */
+  }
+  .page-2-content {
+      flex-direction: column; /* Stack images */
+  }
+  .page-2-content > img {
+      width: 100%; /* Full width for images */
+  }
+  .hading {
+      flex-direction: column; /* Stack heading sections */
+  }
+  .hading-left, .hading-right {
+      width: 100%; /* Full width for both sections */
+      padding: 0; /* Remove padding */
+  }
+}
+
+
+/* ==========responsive============= */
+
+
+@media (max-width: 768px) {
+  .page3-top > h1 {
+      font-size: 80px; /* Further decrease heading size */
+  }
+  .page3-bottom > img {
+      width: 100%; /* Full width for images */
+  }
+  .page4-content {
+      flex-direction: column; /* Stack page 4 content */
+  }
+  .page4-imges {
+      flex-direction: column; /* Stack images */
+  }
+  .photo9, .photo10, .photo11, .photo12 {
+      width: 100%; /* Full width for photos */
+  }
+}
+
+@media (max-width: 576px) {
+  .page5-hading > h1 {
+      font-size: 50px; /* Decrease heading size */
+  }
+  .smiley {
+      width: 60px; /* Smaller smiley */
+      height: 60px; /* Smaller smiley */
+  }
+  .page5-image > img {
+      margin-top: 10%; /* Adjust margin */
+  }
+  .footer2 {
+      flex-direction: column; /* Stack footer items */
+  }
+  .left-footer, .right-footer {
+      width: 100%; /* Full width for footer sections */
+      padding: 0; /* Remove padding */
+  }
+  .right-footer {
+      gap: 20px; /* Reduce gap */
+  }
+}
